@@ -3,7 +3,7 @@ class Solution {
         int n = prices.length;
         int min = prices[0];
         int res = 0;
-        for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n ; i++) {
                 res = Math.max(res, prices[i] - min);
                 min = Math.min(min,prices[i]);
         }
